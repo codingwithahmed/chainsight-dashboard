@@ -1,0 +1,92 @@
+.desktop-nav {
+    width: 300px;
+    background-color: #171717;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desktop-nav > div {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desktop-nav  > div > .btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 0rem;
+    margin: 1rem 0rem;
+    cursor: pointer;    
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.desktop-nav > div  > .btn:hover {
+    background-color: #0f0f0f;
+}
+
+.desktop-nav > div  > .btn.selected {
+    background-color: #0f0f0f;
+}
+
+.hamburger {
+    display: none;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: solid 160px #f5f5f5;
+    padding-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        width: 300px;
+        background-color: #171717 !important;
+        display: flex;
+        flex-direction: column
+    }
+
+    .mobile-nav  > .btn {
+        border: none;
+        background-color: transparent;
+        color: white;
+        padding: 1rem 0rem;
+        margin: 1rem 0rem;
+        cursor: pointer;    
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+    
+    .mobile-nav > .btn:hover {
+        background-color: #0f0f0f;
+    }
+    
+    .mobile-nav  > .btn.selected {
+        background-color: #0f0f0f;
+    }
+
+    .hamburger {
+        display: block;
+        width: 72px;
+        height: 48px;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        left: 0.5rem;
+    }
+}
