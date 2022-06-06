@@ -35,7 +35,7 @@ const Sidebar = () => {
   ]
 
   const logo = <p className='logo'>Chainsight.</p>
-  const links = <div>asd</div>
+  const links = <div></div>
 
   return (
     <>

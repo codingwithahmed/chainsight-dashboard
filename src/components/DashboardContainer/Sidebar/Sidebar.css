@@ -38,11 +38,12 @@
 }
 
 .logo {
-    color: white;
+    color: #171717;
+    background-color: #f5f5f5;
     font-size: 2rem;
     text-align: center;
-    border-bottom: solid 160px #f5f5f5;
-    padding-bottom: 2rem;
+    padding: 2rem;
+    margin: 0;
 }
 
 
@@ -89,4 +90,5 @@
         top: 1rem;
         left: 0.5rem;
     }
+
 }
