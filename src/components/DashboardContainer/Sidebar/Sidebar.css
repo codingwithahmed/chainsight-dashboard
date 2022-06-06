@@ -44,6 +44,33 @@
     text-align: center;
     padding: 2rem;
     margin: 0;
+    font-weight: 800;
+}
+
+.mobile-nav {
+    width: 300px;
+    background-color: #171717 !important;
+    display: flex;
+    flex-direction: column
+}
+
+.mobile-nav  > .btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 0rem;
+    margin: 1rem 0rem;
+    cursor: pointer;    
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.mobile-nav > .btn:hover {
+    background-color: #0f0f0f;
+}
+
+.mobile-nav  > .btn.selected {
+    background-color: #0f0f0f;
 }
 
 
