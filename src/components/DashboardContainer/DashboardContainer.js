@@ -69,8 +69,17 @@ const DashboardContainer = ({children}) => {
   }
 
   const routerSelector = (route) => {
-    setDashbaordRoute(route)
-    console.log(dashboardRoute)
+
+    if (route === 'logout') {
+      window.localStorage.setItem('is_authenticated', false)
+      window.localStorage.setItem('access_token', '')
+      window.localStorage.setItem('refresh_token', '')
+      window.location.reload()
+    } else {
+      setDashbaordRoute(route)
+      console.log(dashboardRoute)
+    }
+   
   }
 
   
